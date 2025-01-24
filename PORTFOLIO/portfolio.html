@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaushik Bhattacharya - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(120deg, #1c1c1c, #2a2a2a);
+            color: #f4f4f4;
+        }
+        header {
+            background: #0d6efd;
+            color: #fff;
+            padding: 30px 20px;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+        header h1 {
+            font-size: 2.5rem;
+        }
+        header p {
+            font-size: 1.2rem;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            padding: 15px;
+            background: #333;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: #f4f4f4;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 600;
+            margin: 0 15px;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background 0.3s, color 0.3s, transform 0.3s;
+        }
+        nav a:hover {
+            background: #0d6efd;
+            color: #fff;
+            transform: scale(1.1);
+        }
+        section {
+            padding: 60px 20px;
+            text-align: center;
+            animation: slideIn 1.5s ease-in-out;
+        }
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #0d6efd;
+        }
+        .home {
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .home button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: #fff;
+            background: #0d6efd;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.3s;
+        }
+        .home button:hover {
+            background: #094db1;
+            transform: scale(1.1);
+        }
+        .skills ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .skills ul li {
+            margin: 10px 15px;
+            padding: 10px 20px;
+            background: #444;
+            color: #f4f4f4;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+        }
+        .skills ul li:hover {
+            transform: translateY(-10px);
+        }
+        .projects .project {
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 500px;
+            background: #333;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+        }
+        .projects .project:hover {
+            transform: translateY(-10px) scale(1.05);
+        }
+        .contact a {
+            color: #0d6efd;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.5rem;
+            transition: transform 0.3s;
+        }
+        .contact a:hover {
+            color: #094db1;
+            transform: scale(1.2);
+        }
+        footer {
+            padding: 20px;
+            background: #0d6efd;
+            color: white;
+            text-align: center;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            0% {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Kaushik Bhattacharya</h1>
+        <p>B.Tech in Computer Science and Engineering | 2nd Year</p>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="home" class="home">
+        <h2>Welcome to My Portfolio</h2>
+        <p>I am a passionate student eager to contribute to impactful projects and grow in the tech industry.</p>
+        <button onclick="window.location.href='#contact'">Get in Touch</button>
+    </section>
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Python</li>
+            <li>Java</li>
+            <li>MySQL</li>
+            <li>HTML & CSS</li>
+            <li>JavaScript</li>
+            <li>Git & GitHub</li>
+        </ul>
+    </section>
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project 1</h3>
+            <p>A detailed description of the project goes here.</p>
+        </div>
+        <div class="project">
+            <h3>Project 2</h3>
+            <p>A detailed description of the project goes here.</p>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <p>Email: kaushikb.official@gmail.com</p>
+        <p>Phone: +91-8017256148</p>
+        <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="mailto:kaushikb.official@gmail.com"><i class="fas fa-envelope"></i></a>
+    </section>
+    <footer>
+        &copy; 2025 Kaushik Bhattacharya. All Rights Reserved.
+    </footer>
+</body>
+</html>
